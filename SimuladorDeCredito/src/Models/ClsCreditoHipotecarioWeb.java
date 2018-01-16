@@ -21,7 +21,6 @@ public class ClsCreditoHipotecarioWeb extends ClsDriver{
           WDriver.findElement(By.id("terminoBusqueda")).sendKeys(busqueda);
           WDriver.findElement(By.id("terminoBusqueda")).sendKeys(Keys.ENTER);
           label("buscar simuladores");
-		/control de versiones
      }
      
      public void SelectLink(String LnkContenido) throws InterruptedException, IOException {

@@ -1,0 +1,19 @@
+<suite name="Simuladores" parallel="tests" thread-count="4" >
+  <test name="ConsumoWeb" group-by-instances="true">
+    <classes>
+      <class name="Tests.ClsConsumoWeb" />
+    </classes>
+  </test>
+    <test name="HipotecarioWeb" group-by-instances="true">
+    <classes>
+      <class name="Tests.ClsHipotecarioWeb" />
+    </classes>
+  </test>
+    <test name="Android" group-by-instances="true">
+    <classes>
+      <class name="Tests.ClsConsumoDroid" />
+      <class name="Tests.ClsLibranzaDroid" />
+      
+    </classes>
+  </test>
+</suite>

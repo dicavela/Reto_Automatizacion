@@ -3,9 +3,10 @@ package Global;
 import  java.io.*;
 import java.text.NumberFormat;
 
+import org.apache.poi.hssf.usermodel.HSSFRow;
 import  org.apache.poi.hssf.usermodel.HSSFSheet;
 import  org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import  org.apache.poi.hssf.usermodel.HSSFRow;
+
 
 public class ClsBuilderExcel {
      
@@ -45,10 +46,11 @@ public class ClsBuilderExcel {
                       row.createCell(4).setCellValue(formato.format(Double.valueOf(best)/100));
                     FileOutputStream fileOut = new FileOutputStream(fileName);
                       workbook.write(fileOut);
+                      
                       fileOut.close();
                  }
         } catch ( Exception ex ) {
-            System.out.println(ex);
+            System.out.println(ex.getMessage());
         }
     }
 }

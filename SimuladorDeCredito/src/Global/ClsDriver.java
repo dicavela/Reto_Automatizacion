@@ -21,12 +21,12 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class ClsDriver {
      
-     public static WebDriver WDriver;
+     public WebDriver WDriver;
      public static AndroidDriver<MobileElement> DriverDroid;
      
      static boolean active = true;
      static String ruta = "", auxruta = "";
-     static int contador = 0;
+     int contador = 0;
 
      
      
@@ -45,8 +45,6 @@ public class ClsDriver {
           DTDriver.put("platformName", "Android");
           DTDriver.put("appPackage", "com.todo1.mobile");
           DTDriver.put("appActivity", "com.todo1.mobile.ui.contenido.splash");
-          DTDriver.put("url", "127.0.0.1");
-          DTDriver.put("port", "4723");
           
           capabilities.setCapability("deviceName", DTDriver.get("deviceName"));
           capabilities.setCapability("platformName", DTDriver.get("platformName"));

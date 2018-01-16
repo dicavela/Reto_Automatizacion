@@ -3,14 +3,16 @@ package Tests;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
+import Global.ClsDriver;
 import Models.ClsCreditoLibranzaDroid;
 
 public class ClsLibranzaDroid extends ClsCreditoLibranzaDroid{
      
-     @Before
+     @BeforeMethod
      public void Before() throws MalformedURLException, InterruptedException {
           LoadApp("ClsLibranzaDroid");
      }
@@ -27,6 +29,11 @@ public class ClsLibranzaDroid extends ClsCreditoLibranzaDroid{
           SelectionCmBox("spinnerTasa", "Tasa Variable (Ptos adicionales a la DTF TA)");
           ClickCalcular();
           ExtractValue();
+     }
+     
+     @AfterMethod
+     public void After(){
+    	ClsDriver.DriverDroid.quit();
      }
 }
 

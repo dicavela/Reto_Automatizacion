@@ -1,14 +1,13 @@
 package Tests;
 
 import java.io.IOException;
-
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import Models.*;
 
 public class ClsConsumoWeb extends ClsCreditoConsumoWeb{
      
-     @Before
+     @BeforeMethod
      public void Before() throws InterruptedException {
           LoadPage("ClsConsumoWeb");
      }

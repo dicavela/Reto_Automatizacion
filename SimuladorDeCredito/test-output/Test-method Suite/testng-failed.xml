@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Test-method Suite]" parallel="tests">
+  <test name="Android(failed)" parallel="tests">
+    <classes>
+      <class name="Tests.ClsLibranzaDroid">
+        <methods>
+          <include name="Before"/>
+          <include name="ClLibranzaDroid"/>
+        </methods>
+      </class> <!-- Tests.ClsLibranzaDroid -->
+      <class name="Tests.ClsHipotecarioWeb">
+        <methods>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsHipotecarioWeb -->
+      <class name="Tests.ClsConsumoDroid">
+        <methods>
+          <include name="ClConsumoDroid"/>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsConsumoDroid -->
+      <class name="Tests.ClsConsumoWeb">
+        <methods>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsConsumoWeb -->
+    </classes>
+  </test> <!-- Android(failed) -->
+</suite> <!-- Failed suite [Test-method Suite] -->

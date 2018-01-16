@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Simuladores]" parallel="tests">
+  <test name="ConsumoWeb(failed)" parallel="tests">
+    <classes>
+      <class name="Tests.ClsLibranzaDroid">
+        <methods>
+          <include name="After"/>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsLibranzaDroid -->
+      <class name="Tests.ClsHipotecarioWeb">
+        <methods>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsHipotecarioWeb -->
+      <class name="Tests.ClsConsumoWeb">
+        <methods>
+          <include name="ClConsumoWeb"/>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsConsumoWeb -->
+      <class name="Tests.ClsConsumoDroid">
+        <methods>
+          <include name="After"/>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsConsumoDroid -->
+    </classes>
+  </test> <!-- ConsumoWeb(failed) -->
+  <test name="Android(failed)" parallel="tests">
+    <classes>
+      <class name="Tests.ClsLibranzaDroid">
+        <methods>
+          <include name="After"/>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsLibranzaDroid -->
+      <class name="Tests.ClsHipotecarioWeb">
+        <methods>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsHipotecarioWeb -->
+      <class name="Tests.ClsConsumoDroid">
+        <methods>
+          <include name="ClConsumoDroid"/>
+          <include name="After"/>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsConsumoDroid -->
+      <class name="Tests.ClsConsumoWeb">
+        <methods>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- Tests.ClsConsumoWeb -->
+    </classes>
+  </test> <!-- Android(failed) -->
+</suite> <!-- Failed suite [Simuladores] -->

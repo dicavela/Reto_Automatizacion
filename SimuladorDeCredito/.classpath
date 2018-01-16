@@ -3,9 +3,9 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="D:/Dicavela/Documents/MANDELA/jars/java-client-5.0.3.jar"/>
-	<classpathentry kind="lib" path="D:/Dicavela/Documents/MANDELA/jars/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="D:/Dicavela/Documents/MANDELA/jars/selenium-server-standalone-3.5.3.jar"/>
 	<classpathentry kind="lib" path="D:/Dicavela/Documents/MANDELA/jars/poi-3.9.jar"/>
 	<classpathentry kind="lib" path="D:/Dicavela/Documents/MANDELA/jars/jasmine-1.3.1.jar folder/jasmine-1.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Dicavela/Documents/MANDELA/jars/testng-6.8.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
