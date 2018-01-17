@@ -62,7 +62,7 @@ public class ClsCreditoConsumoDroid extends ClsDriver{
      
      private void HideKeys() {
           try {
-                DriverDroid.hideKeyboard();
+                DriverDroid.hideKeyboard();//esconder teclado
           }catch(Exception e) {}
      }
 }
